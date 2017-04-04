@@ -14,7 +14,7 @@ class bitmap2ascii:
         w, h = pix.size
 
         with open('Ascii_'+ filename + '.txt', 'w') as file:
-            asciiList = ['@', '#', '=', '+', '-', '.', ' ']
+            asciiList = ['@.', '#.', '=.', '+.', '-.', '..', ' .']
 
             for i in range(h):
                 for j in range(w):
@@ -45,6 +45,8 @@ class bitmap2ascii:
                         # lineMatrix.append(pixdata)
 
                 file.write("\n")
+
+bitmap2ascii.convert("test.jpg")
 
 
 
